@@ -1,0 +1,125 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-gray-400;
+}
+
+.input {
+  @apply rounded border px-2 py-1 hover:border-gray-800 focus:outline-none focus:border-blue;
+}
+
+.btn-blue {
+  @apply bg-cornflower-blue-500 hover:bg-blue-dark text-white font-medium rounded-full py-2 px-4;
+}
+
+.btn-green {
+  @apply bg-green hover:bg-green-dark text-white font-medium rounded-full py-2 px-4;
+}
+
+.btn-red {
+  @apply bg-red-600 hover:bg-red-700 text-white font-medium rounded-full py-2 px-4;
+}
+
+.btn-xs {
+  @apply text-xs p-1.5;
+}
+
+.btn-sm {
+  @apply text-sm px-2;
+}
+
+.btn-link {
+  @apply rounded py-2 px-4;
+}
+
+.input-group-l {
+  @apply rounded-none rounded-l;
+}
+
+.input-group-r {
+  @apply rounded-none rounded-r;
+}
+
+.input-group {
+  height: 35px;
+}
+
+.dropdown-content {
+  min-width: min-content;
+}
+
+.css-1nmdiq5-menu {
+  min-width: min-content;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltipsmall .tooltipsmall-text {
+  visibility: hidden;
+  top: 0px;
+  left: 160%;
+  width: max-content;
+  @apply bg-cornflower-blue-500 p-2 rounded-md text-xs;
+}
+
+.tooltipsmall:hover .tooltipsmall-text {
+  visibility: visible;
+}
+
+.tooltipsmall .tooltipsmall-text::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  @apply border-cornflower-blue-500;
+  border-color: transparent #2d83f3 transparent transparent;
+}
+
+.left_nav_contrainer {
+  transform: translateX(-100%);
+  transition: all 0.2s linear;
+}
+
+.menu_active {
+  opacity: 1;
+  transform: translate(0%, 0%);
+}
+
+.main_container_menu_active {
+  transform: translateX(195px);
+  transition: all 0.2s linear;
+  width: calc(100% - 195px);
+}
+
+.main_container {
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+@layer base {
+  html {
+    font-family: Rubik;
+  }
+}

@@ -1,6 +1,6 @@
-import IconArrowCircleRight from "./icons/IconArrowCircleRight";
-import IconPersonAdd from "./icons/IconPersonAdd";
-import IconPersonGroupAdd from "./icons/IconPersonGroupAdd";
+import IconArrowCircleRight from "../icons/IconArrowCircleRight";
+import IconPersonAdd from "../icons/IconPersonAdd";
+import IconPersonGroupAdd from "../icons/IconPersonGroupAdd";
 import React from "react";
 
 export function PlusButton({
