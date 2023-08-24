@@ -1,5 +1,5 @@
 {
-  "name": "velaro-shared",
+  "name": "@velaro/velaro-shared",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
