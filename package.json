@@ -3,21 +3,11 @@
   "version": "0.1.1",
   "private": true,
   "dependencies": {
-    "@emoji-mart/data": "^1.1.2",
-    "@emoji-mart/react": "^1.1.1",
-    "@microsoft/signalr": "^5.0.4",
-    "date-fns": "^2.22.1",
     "dompurify": "^2.3.5",
-    "emoji-mart": "^5.5.2",
-    "events": "^3.3.0",
     "lodash": "^4.17.21",
     "marked": "^4.0.12",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-multi-select-component": "^4.3.4",
-    "react-router-dom": "^5.2.0",
-    "recharts": "^2.1.8",
-    "web-vitals": "^1.1.0"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
@@ -50,9 +40,6 @@
     "vite": "^4.1.1"
   },
   "scripts": {
-    "build": "tsc",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "prepare": "npm run build"
+    "build": "tsc"
   }
 }
