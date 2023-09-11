@@ -18,9 +18,6 @@
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "paths": {
-      "react": ["./node_modules/@types/react"]
-    }
+    "forceConsistentCasingInFileNames": true
   }
 }
