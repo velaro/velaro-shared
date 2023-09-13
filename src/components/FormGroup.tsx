@@ -1,7 +1,7 @@
 import React from "react";
 
 interface Props {
-  label: boolean;
+  label: string;
   children: React.ReactElement;
 }
 
