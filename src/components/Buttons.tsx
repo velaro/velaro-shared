@@ -50,18 +50,19 @@ export function MinusButton({
 export function PrimaryButton({
   label,
   onClick,
+  disabled
 }: {
   label?: string;
   onClick(): void;
+  disabled?: boolean;
 }) {
   return (
     <button
-    style={{display: "none"}}
       className={
-        "bg-red-500 hover:bg-red-700 text-white py-2 px-4 rounded-full text-sm font-medium"
+        "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full text-sm font-medium"
       }
       onClick={onClick}
-      disabled
+      disabled={disabled}
     >
       {label}
     </button>
