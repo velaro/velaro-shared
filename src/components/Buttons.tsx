@@ -62,7 +62,7 @@ export function PrimaryButton({
         "bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded-full text-sm font-medium"
       }
       onClick={onClick}
-      disabled={disabled}
+      disabled={true}
     >
       {label}
     </button>
