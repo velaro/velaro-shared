@@ -60,7 +60,7 @@ export default function ToastAlert({
       id="toastAlert"
       className={
         colorVariants[Severity[severity] as keyof typeof Severity] +
-        " justify-between mb-4 shadow-lg"
+        " justify-between mb-4 shadow-lg z-50 pointer-events-auto"
       }
     >
       <div className="flex">
