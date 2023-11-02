@@ -48,7 +48,7 @@ export default function ToastAlert({
 }: Props) {
   useEffect(() => {
     if (sticky == true) {
-      console.log("stickyAlerts is true");
+      return;
     } else {
       const displayTimeout = setTimeout(() => closeAlert(id), stickyDuration);
       return () => clearTimeout(displayTimeout);
