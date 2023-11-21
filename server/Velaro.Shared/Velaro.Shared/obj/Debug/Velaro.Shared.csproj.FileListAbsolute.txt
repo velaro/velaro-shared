@@ -1,0 +1,8 @@
+C:\Workspace\velaro-shared\server\Velaro.Shared\Velaro.Shared\bin\Debug\Velaro.Shared.dll
+C:\Workspace\velaro-shared\server\Velaro.Shared\Velaro.Shared\bin\Debug\Velaro.Shared.pdb
+C:\Workspace\velaro-shared\server\Velaro.Shared\Velaro.Shared\obj\Debug\Velaro.Shared.csproj.AssemblyReference.cache
+C:\Workspace\velaro-shared\server\Velaro.Shared\Velaro.Shared\obj\Debug\Velaro.Shared.csproj.CoreCompileInputs.cache
+C:\Workspace\velaro-shared\server\Velaro.Shared\Velaro.Shared\obj\Debug\Velaro.Shared.dll
+C:\Workspace\velaro-shared\server\Velaro.Shared\Velaro.Shared\obj\Debug\Velaro.Shared.pdb
+c:\velaro\Velaro.Shared.dll
+c:\velaro\Velaro.Shared.pdb
