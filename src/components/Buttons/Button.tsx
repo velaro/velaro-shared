@@ -4,12 +4,14 @@ interface Props {
   children?: React.ReactNode;
   icon?: React.ReactNode;
   onClick(): void;
+  disabled?: boolean;
 }
-export function Button({ children, icon, onClick }: Props) {
+export function Button({ children, icon, onClick, disabled }: Props) {
+  const cursorClass = disabled ? "cursor-not-allowed" : "cursor-pointer";
   return (
     <div
-      onClick={onClick}
-      className="w-36 h-10 rounded justify-center items-center inline-flex cursor-pointer"
+      onClick={disabled ? undefined : onClick}
+      className={`w-36 h-10 rounded justify-center items-center inline-flex ${cursorClass}`}
     >
       {icon && (
         <div className="w-4 h-4 justify-center items-center flex">
