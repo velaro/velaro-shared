@@ -67,6 +67,8 @@ namespace Velaro.Shared
         public static string RedisConnection => ExternalConfiguration.GetAppSetting("RedisConnection");
         public static string AutomationApiUrl => ExternalConfiguration.GetAppSetting("AutomationApiUrl");
         public static string SoundsUrl => ExternalConfiguration.GetAppSetting("SoundsUrl");
+        public static string BotDatabaseConnectionString => ExternalConfiguration.GetAppSetting("BotDatabaseConnectionString");
+        public static string AutomationClientUrl => ExternalConfiguration.GetAppSetting("AutomationClientUrl");
 
         private static string GetValue(string variable)
         {

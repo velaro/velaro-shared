@@ -6,7 +6,7 @@ namespace Velaro.Shared.Configuration.Stores
 {
     public class FileSystemSettingsStore : ISettingsStore
     {
-        private const string FilePath = @"c:\velaro\admin.development.config";
+        private const string FilePath = @"c:\velaro\messaging.development.config";
 
         public async Task<Dictionary<string, string>> FindAllAsync()
         {
