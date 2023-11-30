@@ -8,7 +8,7 @@ interface ModalProps {
 }
 
 interface HeaderProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 interface ModalBodyProps {
@@ -16,7 +16,7 @@ interface ModalBodyProps {
 }
 
 interface ModalFooterProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 function Modal(props: ModalProps) {
