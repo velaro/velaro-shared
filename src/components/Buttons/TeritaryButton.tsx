@@ -11,11 +11,9 @@ export function TeritaryButton({ label, onClick, icon, disabled }: Props) {
   if (disabled) {
     return (
       <Button onClick={onClick} icon={icon} disabled={disabled}>
-        <div className="grow shrink basis-0 h-10 px-6 py-3 bg-white rounded border-2 border-neutral-300 justify-center items-center gap-2 flex">
-          <div className="grow shrink basis-0 h-10 px-6 py-3 rounded justify-center items-center gap-2 flex">
-            <div className="text-center text-neutral-300 text-sm font-semibold font-['Rubik'] leading-none">
-              Button
-            </div>
+        <div className="grow shrink basis-0 h-10 px-6 py-3 rounded justify-center items-center gap-2 flex">
+          <div className="text-center text-neutral-300 text-sm font-semibold font-['Rubik'] leading-none">
+            Button
           </div>
         </div>
       </Button>
