@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 interface Props {
   value: string;
@@ -6,7 +6,8 @@ interface Props {
   disabled?: boolean;
   error: string;
 }
-export function Textbox({ value, onChange, disabled, error }: Props) {
+export function Textbox(props: Props) {
+  const [error, seteError] = useState(props.error);
   const textColor = error ? "text-rose-500" : "text-zinc-700";
   const borderColor = error
     ? "border-rose-500"
@@ -19,9 +20,12 @@ export function Textbox({ value, onChange, disabled, error }: Props) {
         className={`grow shrink basis-0 p-3 ${bgColor} rounded border ${borderColor} flex-col justify-center items-start gap-1 inline-flex`}
       >
         <input
-          value={value || ""}
-          onChange={(e) => onChange(e.target.value)}
-          disabled={disabled}
+          value={props.value || ""}
+          onChange={(e) => {
+            seteError("");
+            props.onChange(e.target.value);
+          }}
+          disabled={props.disabled}
           type="text"
           className={`${textColor} text-base font-normal font-['Rubik'] leading-normal border-none outline-none bg-inherit`}
         />
