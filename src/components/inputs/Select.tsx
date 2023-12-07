@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 export default function Select<T extends string | number>({
-  className,
   options,
   value,
   onChange,

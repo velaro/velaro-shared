@@ -20,14 +20,14 @@ export function Textbox({ value, onChange, disabled, error }: Props) {
           onChange={(e) => onChange(e.target.value)}
           disabled={disabled}
           type="text"
-          className={`${textColor} hover:text-gray-400 focus:text-zinc-700 text-base font-normal font-['Rubik'] leading-normal border-none outline-none`}
+          className={`${textColor} text-zinc-700 text-base font-normal font-['Rubik'] leading-normal border-none outline-none bg-inherit`}
         />
-        {error && (
-          <div className="text-rose-500 text-xs font-normal font-['Rubik'] leading-normal">
-            {error}
-          </div>
-        )}
       </div>
+      {error && (
+        <div className="text-rose-500 text-xs font-normal font-['Rubik'] leading-normal">
+          {error}
+        </div>
+      )}
     </div>
   );
 
