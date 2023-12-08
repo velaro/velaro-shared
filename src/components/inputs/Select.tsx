@@ -23,21 +23,100 @@ export default function Select<T extends string | number>({
   return (
     <div className="w-52 h-12 p-3 bg-white rounded border border-neutral-300 justify-between items-center inline-flex">
       <div className="rounded flex-col justify-center items-start gap-1 inline-flex">
-        <select
+        {/* <select
           className={`text-neutral-300 text-base font-normal font-['Rubik'] leading-normal`}
           value={value || ""}
           onChange={(e) => onChange(e.currentTarget.value as T)}
         >
           {optionList.map((c, i) => (
             <option key={i} value={c}>
-              {options[c]}
+              <div className="justify-center items-center flex">
+                <div className="w-6 h-6 relative">{options[c]}</div>
+              </div>
             </option>
           ))}
-        </select>
+        </select> */}
+        <div className="rounded flex-col justify-center items-start gap-1 inline-flex">
+          <div className="text-gray-400 text-base font-normal font-['Rubik'] leading-normal">
+            Please select
+          </div>
+        </div>
+        <div className="justify-center items-center flex">
+          <div className="w-6 h-6 relative" />
+        </div>
       </div>
-      <div className="justify-center items-center flex">
-        <div className="w-6 h-6 relative" />
+      <div className="self-stretch h-72 flex-col justify-start items-start flex">
+        <div className="self-stretch p-3 border-b border-gray-400 justify-start items-center gap-2 inline-flex">
+          <div className="w-4 h-4 justify-center items-center flex">
+            <div className="w-4 h-4 relative" />
+          </div>
+          <div className="rounded flex-col justify-center items-start gap-1 inline-flex">
+            <div className="text-neutral-300 text-base font-normal font-['Rubik'] leading-normal">
+              Search
+            </div>
+          </div>
+        </div>
+        <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+          <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+            Dropdown Item
+          </div>
+        </div>
+        <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+          <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+            Dropdown Item
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
+<div className="w-52 h-80 bg-white rounded shadow border border-gray-400 flex-col justify-start items-start inline-flex">
+  <div className="self-stretch p-3 border-b border-gray-400 justify-between items-center inline-flex">
+    <div className="rounded flex-col justify-center items-start gap-1 inline-flex">
+      <div className="text-gray-400 text-base font-normal font-['Rubik'] leading-normal">
+        Please select
+      </div>
+    </div>
+    <div className="justify-center items-center flex">
+      <div className="w-6 h-6 relative" />
+    </div>
+  </div>
+  <div className="self-stretch h-72 flex-col justify-start items-start flex">
+    <div className="self-stretch p-3 border-b border-gray-400 justify-start items-center gap-2 inline-flex">
+      <div className="w-4 h-4 justify-center items-center flex">
+        <div className="w-4 h-4 relative" />
+      </div>
+      <div className="rounded flex-col justify-center items-start gap-1 inline-flex">
+        <div className="text-neutral-300 text-base font-normal font-['Rubik'] leading-normal">
+          Search
+        </div>
+      </div>
+    </div>
+    <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+      <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+        Dropdown Item
+      </div>
+    </div>
+    <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+      <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+        Dropdown Item
+      </div>
+    </div>
+    <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+      <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+        Dropdown Item
+      </div>
+    </div>
+    <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+      <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+        Dropdown Item
+      </div>
+    </div>
+    <div className="self-stretch h-12 p-3 rounded flex-col justify-center items-start gap-1 flex">
+      <div className="self-stretch text-zinc-700 text-base font-normal font-['Rubik'] leading-normal">
+        Dropdown Item
+      </div>
+    </div>
+  </div>
+</div>;

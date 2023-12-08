@@ -9,7 +9,7 @@ interface Props {
 }
 export function Button({ children, icon, onClick, disabled, size }: Props) {
   const cursorClass = disabled ? "cursor-not-allowed" : "cursor-pointer";
-  const dimensions = size === "sm" ? "w-16 h-8" : "w-36 h-10";
+  const dimensions = size === "sm" ? "max-w-16 h-8" : "max-w-36 h-10";
   return (
     <div
       onClick={disabled ? undefined : onClick}

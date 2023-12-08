@@ -4,7 +4,7 @@ interface Props {
   value: string;
   onChange(value: string): void;
   disabled?: boolean;
-  error: string;
+  error?: string;
 }
 export function Textbox(props: Props) {
   const [error, seteError] = useState(props.error);
