@@ -16,22 +16,22 @@ import en_gb from "../locales/en-gb.json"; // English (Great Britain)
 import en_us from "../locales/en-us.json"; // English (United States)
 
 const translations: any = {
-  en: { en },
-  es: { es },
-  de: { de },
-  fr: { fr },
-  it: { it },
-  ja: { ja },
-  ko: { ko },
-  pl: { pl },
-  pt_PT: { pt_PT },
-  ru: { ru },
-  tr: { tr },
-  zh_CN: { zh_CN },
-  zh_TW: { zh_TW },
-  zh: { zh },
-  en_gb: { en_gb },
-  en_us: { en_us }
+  en: { translation: en },
+  es: { translation: es },
+  de: { translation: de },
+  fr: { translation: fr },
+  it: { translation: it },
+  ja: { translation: ja },
+  ko: { translation: ko },
+  pl: { translation: pl },
+  pt_PT: { translation: pt_PT },
+  ru: { translation: ru },
+  tr: { translation: tr },
+  zh_CN: { translation: zh_CN },
+  zh_TW: { translation: zh_TW },
+  zh: { translation: zh },
+  en_gb: { translation: en_gb },
+  en_us: { translation: en_us }
 };
 
 export default translations;
