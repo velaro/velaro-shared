@@ -8,6 +8,7 @@ import { ko } from "ko.json"; // Korean
 import { pl } from "pl.json"; // Polish
 import { pt_PT } from "pt-pt.json"; // Portuguese (Portugal)
 import { ru } from "ru.json"; // Russian
+import { tr } from "tr.json"; // Turkish
 import { zh_CN } from "zh-cn.json"; // Chinese (China)
 import { zh_TW } from "zh-tw.json"; // Chinese (Taiwan)
 import { zh } from "zh.json"; // Chinese
@@ -25,6 +26,7 @@ const translations = [
   pl,
   pt_PT,
   ru,
+  tr,
   zh_CN,
   zh_TW,
   zh,
