@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "../../node_modules/@types/react-dom";
 
 interface ModalProps {
   show: boolean;
