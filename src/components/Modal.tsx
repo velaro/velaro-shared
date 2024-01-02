@@ -1,5 +1,5 @@
 import React from "react";
-import { createPortal } from "react-dom";
+import ReactDOM from "react-dom";
 
 interface ModalProps {
   show: boolean;
@@ -26,7 +26,7 @@ function Modal(props: ModalProps) {
 
   const maxWidth = props.maxWidth || "max-w-md";
 
-  return createPortal(
+  return ReactDOM.createPortal(
     <div className="modal-backdrop py-10 fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 flex">
       <div
         className={`modal rounded relative bg-white w-full m-auto flex-col flex ${maxWidth}`}
