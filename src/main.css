@@ -3,6 +3,6 @@
 }
 
 .PhoneInput input.PhoneInputInput {
-  @apply border-slate-300 hover:border-black focus:border-blue-600 focus-visible:border-blue-600;
+  @apply border-slate-300 hover:border-black focus:border-cornflower-blue-600 focus-visible:border-cornflower-blue-600;
   outline: none;
 }

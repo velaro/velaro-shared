@@ -23,8 +23,8 @@ interface Props {
 
 const colorVariants = {
   Success:
-    "flex flex-row p-4 w-96 h-24 text-sm text-green-800 rounded-lg bg-green-300",
-  Info: "flex flex-row p-4 w-96 h-24 text-sm text-blue-800 rounded-lg bg-blue-300",
+    "flex flex-row p-4 w-96 h-24 text-sm text-success-green-800 rounded-lg bg-success-green-300",
+  Info: "flex flex-row p-4 w-96 h-24 text-sm text-cornflower-blue-800 rounded-lg bg-cornflower-blue-300",
   Warning:
     "flex flex-row p-4 w-96 h-24 text-sm text-yellow-800 rounded-lg bg-yellow-300",
   Error:

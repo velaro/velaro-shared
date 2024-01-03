@@ -8,10 +8,11 @@ interface Props {
 
 export default function Toggle(props: Props) {
   let colorClassName =
-    "peer-focus:cornflower-blue-200 peer-checked:bg-cornflower-blue-500";
+    "peer-focus:cornflower-cornflower-blue-200 peer-checked:bg-cornflower-cornflower-blue-500";
 
   if (props.color === "green") {
-    colorClassName = "peer-focus:ring-green-300 peer-checked:bg-green-500";
+    colorClassName =
+      "peer-focus:ring-success-green-300 peer-checked:bg-success-green-500";
   }
   return (
     <div className="relative flex flex-col items-center justify-center overflow-hidden">
