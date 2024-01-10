@@ -2,7 +2,7 @@ import React from "react";
 
 interface Props {
   label: string;
-  key?: number;
+  index?: number;
   pill?: boolean;
 }
 
@@ -11,7 +11,7 @@ export default function OutlineBadge(props: Props) {
 
   return (
     <div
-      key={props.key}
+      key={props.index}
       className={`${pill} border border-cornflower-blue-500 text-cornflower-blue-500 text-xs px-1 py-[2px] m-1`}
     >
       {props.label}
