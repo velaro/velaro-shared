@@ -8,7 +8,7 @@ interface Props {
 
 export default function Toggle(props: Props) {
   let colorClassName =
-    "peer-focus:cornflower-cornflower-blue-200 peer-checked:bg-cornflower-cornflower-blue-500";
+    "peer-focus:cornflower-blue-200 peer-checked:bg-cornflower-blue-500";
 
   if (props.color === "green") {
     colorClassName =
