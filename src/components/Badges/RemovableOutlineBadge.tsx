@@ -11,7 +11,7 @@ interface Props {
 export default function RemovableOutlineBadge(props: Props) {
   const pill = props.pill ? "rounded-full" : "rounded";
   const size = props.size === "sm" ? "text-xs" : "";
-  const closeIconSize = props.size === "sm" ? "" : "w-6 h-6";
+  const closeIconSize = props.size === "sm" ? "" : "w-4 h-4";
   return (
     <div
       className={`${pill} ${size} border border-cornflower-blue-500 text-cornflower-blue-500 px-1 py-[2px] m-1 flex items-center`}

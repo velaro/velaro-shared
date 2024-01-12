@@ -11,7 +11,7 @@ interface Props {
 export default function RemovableFilledBadge(props: Props) {
   const pill = props.pill ? "rounded-full" : "rounded";
   const size = props.size === "sm" ? "text-xs" : "";
-  const closeIconSize = props.size === "sm" ? "" : "w-6 h-6";
+  const closeIconSize = props.size === "sm" ? "" : "w-4 h-4";
 
   return (
     <div
