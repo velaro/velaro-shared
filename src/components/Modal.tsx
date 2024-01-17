@@ -31,7 +31,7 @@ function Modal(props: ModalProps) {
   return createPortal(
     <div className="modal-backdrop py-10 fixed inset-0 z-50 overflow-auto bg-black bg-opacity-30 flex">
       <div
-        className={`modal rounded shadow relative bg-white w-full m-auto flex-col flex ${maxWidth}`}
+        className={`modal rounded shadow-lg relative bg-white w-full m-auto flex-col flex ${maxWidth}`}
       >
         {props.children}
       </div>
