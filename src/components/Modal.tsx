@@ -1,5 +1,6 @@
 import React from "react";
 import { createPortal } from "react-dom";
+import IconClose1 from "../icons/IconClose1";
 
 interface ModalProps {
   show: boolean;
@@ -8,7 +9,8 @@ interface ModalProps {
 }
 
 interface HeaderProps {
-  children?: React.ReactNode;
+  title: string;
+  onClose(): void;
 }
 
 interface ModalBodyProps {
@@ -40,7 +42,14 @@ function Modal(props: ModalProps) {
 
 function ModalHeader(props: HeaderProps) {
   return (
-    <div className="modal-header rounded-t bg-gray-100">{props.children}</div>
+    <div className="modal-header rounded-t ">
+      <div className="m-4 text-lg font-semibold flex justify-between">
+        <div>{props.title}</div>
+        <button onClick={() => props.onClose()}>
+          <IconClose1 />
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -50,7 +59,9 @@ function ModalBody(props: ModalBodyProps) {
 
 function ModalFooter(props: ModalFooterProps) {
   return (
-    <div className="modal-footer rounded-b bg-gray-100">{props.children}</div>
+    <div className="modal-footer rounded-b border-t border-slate-gray-50">
+      {props.children}
+    </div>
   );
 }
 
