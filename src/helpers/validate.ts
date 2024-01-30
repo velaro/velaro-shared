@@ -7,15 +7,17 @@ export default function validate(
     return "A value is required";
   }
 
+  if (!value) {
+    return null;
+  }
+
   switch (type) {
     case "email":
-      return (
-        !value || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Invalid email"
-      );
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Invalid email";
     case "phone":
-      return !value || /^\d{10}$/.test(value) || "Invalid phone number";
+      return /^\d{10}$/.test(value) || "Invalid phone number";
     case "number":
-      return !value || /^\d+$/.test(value) || "Invalid number";
+      return /^\d+$/.test(value) || "Invalid number";
     default:
       return null;
   }
