@@ -35,7 +35,7 @@ export function PlusButton({
   return (
     <button
       className={
-        "btn-sm border rounded-full h-5 flex justify-center hover:border-blue-200 hover:scale-125 hover:cursor-pointer"
+        "btn-sm border rounded-full h-5 flex justify-center hover:border-cornflower-blue-200 hover:scale-125 hover:cursor-pointer"
       }
       onClick={onClick}
     >
@@ -57,7 +57,7 @@ export function MinusButton({
   return (
     <button
       className={
-        "btn-sm border rounded-full h-5 flex justify-center hover:border-blue-200 hover:scale-125 hover:cursor-pointer"
+        "btn-sm border rounded-full h-5 flex justify-center hover:border-cornflower-blue-200 hover:scale-125 hover:cursor-pointer"
       }
       onClick={onClick}
     >

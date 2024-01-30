@@ -29,7 +29,7 @@ export function TeritaryButton(props: Props) {
       <div
         className={`${padding} grow shrink basis-0 h-10 justify-center items-center gap-2 flex`}
       >
-        <div className="text-center text-blue-500 hover:text-blue-700 active:text-blue-900  text-sm font-semibold font-['Rubik'] leading-none">
+        <div className="text-center text-cornflower-blue-500 hover:text-cornflower-blue-700 active:text-cornflower-blue-900  text-sm font-semibold font-['Rubik'] leading-none">
           {props.label}
         </div>
       </div>
