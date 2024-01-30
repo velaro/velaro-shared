@@ -1,11 +1,11 @@
 export default function validate(type: string, value: string) {
   switch (type) {
     case "email":
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      return !value || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
     case "phone":
-      return /^\d{10}$/.test(value);
+      return !value || /^\d{10}$/.test(value);
     case "number":
-      return /^\d+$/.test(value);
+      return !value || /^\d+$/.test(value);
     default:
       return true;
   }
