@@ -7,6 +7,6 @@ export default function validate(type: string, value: string) {
     case "number":
       return /^\d+$/.test(value);
     default:
-      return false;
+      return true;
   }
 }
