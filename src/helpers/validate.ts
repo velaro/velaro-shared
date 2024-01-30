@@ -13,11 +13,11 @@ export default function validate(
 
   switch (type) {
     case "email":
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) || "Invalid email";
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value) ? null : "Invalid email";
     case "phone":
-      return /^\d{10}$/.test(value) || "Invalid phone number";
+      return /^\d{10}$/.test(value) ? null : "Invalid phone number";
     case "number":
-      return /^\d+$/.test(value) || "Invalid number";
+      return /^\d+$/.test(value) ? null : "Invalid number";
     default:
       return null;
   }
