@@ -17,6 +17,6 @@ export default function validate(
     case "number":
       return !value || /^\d+$/.test(value) || "Invalid number";
     default:
-      return true;
+      return null;
   }
 }
