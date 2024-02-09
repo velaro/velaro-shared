@@ -98,5 +98,6 @@
   "last_thirty_days": "Ultimos 30 dias",
   "last_sixty_days": "Ultimos 60 dias",
   "last_ninety_days": "Ultimos 90 dias",
-  "translations": "Traducciones"
+  "translations": "Traducciones",
+  "enable_chat_translations": "Habilitar Traducciones de Chat:"
 }
