@@ -1,6 +1,7 @@
 import React from "react";
+import { IconProps } from "./types";
 
-function IconCloseCircle() {
+function IconCloseCircle(props: IconProps) {
   return (
     <svg
       id="Icon-close-circle"
@@ -8,6 +9,7 @@ function IconCloseCircle() {
       width="12"
       height="12"
       viewBox="0 0 16 16"
+      {...props}
     >
       <path
         id="Icon_ionic-ios-close-circle"
