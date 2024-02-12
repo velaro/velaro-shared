@@ -99,5 +99,19 @@
   "last_sixty_days": "Ultimos 60 dias",
   "last_ninety_days": "Ultimos 90 dias",
   "translations": "Traducciones",
-  "enable_chat_translations": "Habilitar traducciones de chat:"
+  "enable_chat_translations": "Habilitar traducciones de chat:",
+  "contact_information": "Informacion de contacto",
+  "email": "correo electronico",
+  "phone": "Telefono",
+  "location": "Ubicacion",
+  "notes": "Notas",
+  "add_note": "Agregar nota",
+  "tags": "Etiquetas",
+  "add_tag": "Agregar etiqueta",
+  "conversation_details": "Detalles de la conversacion",
+  "conversation_notes": "Notas de la conversacion",
+  "conversation_attributes": "Atributos de la conversacion",
+  "no_survey_submissions_label": "No hay envios de encuestas",
+  "search": "Buscar",
+  "search_here": "Buscar aqui"
 }

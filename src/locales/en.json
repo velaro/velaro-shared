@@ -99,5 +99,19 @@
   "last_sixty_days": "Last 60 days",
   "last_ninety_days": "Last 90 days",
   "translations": "Translations",
-  "enable_chat_translations": "Enable chat translations:"
+  "enable_chat_translations": "Enable chat translations:",
+  "contact_information": "Contact Information",
+  "email": "Email",
+  "phone": "Phone",
+  "location": "Location",
+  "notes": "Notes",
+  "add_note": "Add note",
+  "tags": "Tags",
+  "add_tag": "Add tag",
+  "conversation_details": "Conversation details",
+  "conversation_notes": "Conversation notes",
+  "conversation_attributes": "Conversation attributes",
+  "no_survey_submissions_label": "No survey submissions found",
+  "search": "Search",
+  "search_here": "Search here"
 }
