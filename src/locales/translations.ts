@@ -12,8 +12,6 @@ import tr from "../locales/tr.json"; // Turkish
 import zh_CN from "../locales/zh-cn.json"; // Chinese (China)
 import zh_TW from "../locales/zh-tw.json"; // Chinese (Taiwan)
 import zh from "../locales/zh.json"; // Chinese
-import en_gb from "../locales/en-gb.json"; // English (Great Britain)
-import en_us from "../locales/en-us.json"; // English (United States)
 
 const translations: any = {
   en: { translation: en },
@@ -29,9 +27,7 @@ const translations: any = {
   tr: { translation: tr },
   zh_CN: { translation: zh_CN },
   zh_TW: { translation: zh_TW },
-  zh: { translation: zh },
-  en_gb: { translation: en_gb },
-  en_us: { translation: en_us }
+  zh: { translation: zh }
 };
 
 export default translations;
