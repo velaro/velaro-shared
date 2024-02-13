@@ -113,5 +113,11 @@
   "conversation_attributes": "Conversation attributes",
   "no_survey_submissions_label": "No survey submissions found",
   "search": "Search",
-  "search_here": "Search here"
+  "search_here": "Search here",
+  "address": "Address",
+  "city": "City",
+  "state": "State",
+  "last_conversation": "Last Conversation",
+  "contact_added": "Contact Added",
+  "assignee": "Assignee"
 }

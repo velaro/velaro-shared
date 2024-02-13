@@ -113,5 +113,11 @@
   "conversation_attributes": "Atributos de la conversacion",
   "no_survey_submissions_label": "No hay envios de encuestas",
   "search": "Buscar",
-  "search_here": "Buscar aqui"
+  "search_here": "Buscar aqui",
+  "address": "Direccion",
+  "city": "Ciudad",
+  "state": "Estado",
+  "last_conversation": "Conversacion Anterior",
+  "contact_added": "Contacto Agregado",
+  "assignee": "Asignatario"
 }
