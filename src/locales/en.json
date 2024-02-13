@@ -119,5 +119,10 @@
   "state": "State",
   "last_conversation": "Last Conversation",
   "contact_added": "Contact Added",
-  "assignee": "Assignee"
+  "assignee": "Assignee",
+  "conversation_tags": "Conversation tags",
+  "replies": "replies",
+  "web_message": "Web message",
+  "chat": "Chat",
+  "team": "Team"
 }

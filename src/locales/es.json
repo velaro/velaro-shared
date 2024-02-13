@@ -101,7 +101,7 @@
   "translations": "Traducciones",
   "enable_chat_translations": "Habilitar traducciones de chat:",
   "contact_information": "Informacion de contacto",
-  "email": "correo electronico",
+  "email": "Correo electronico",
   "phone": "Telefono",
   "location": "Ubicacion",
   "notes": "Notas",
@@ -119,5 +119,10 @@
   "state": "Estado",
   "last_conversation": "Conversacion Anterior",
   "contact_added": "Contacto Agregado",
-  "assignee": "Asignatario"
+  "assignee": "Asignatario",
+  "conversation_tags": "Etiquetas de la conversacion",
+  "replies": "Respuestas",
+  "web_message": "Mensaje web",
+  "chat": "Chat",
+  "team": "Equipo"
 }
