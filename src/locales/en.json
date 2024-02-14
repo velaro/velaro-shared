@@ -124,5 +124,14 @@
   "replies": "replies",
   "web_message": "Web message",
   "chat": "Chat",
-  "team": "Team"
+  "team": "Team",
+  "unassign": "Unassign",
+  "filters": "Filters",
+  "assignment": "Assignment",
+  "bot": "Bot",
+  "twitter": "Twitter",
+  "facebook": "Facebook",
+  "sms": "SMS",
+  "whatsapp": "WhatsApp",
+  "web": "Web"
 }
