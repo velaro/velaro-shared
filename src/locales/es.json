@@ -135,5 +135,6 @@
   "whatsapp": "WhatsApp",
   "web": "Web",
   "me": "mio",
-  "assigned_to": "Asignado a"
+  "assigned_to": "Asignado a",
+  "assign_to_me": "Asignar a mi"
 }
