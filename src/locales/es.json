@@ -133,5 +133,7 @@
   "facebook": "Facebook",
   "sms": "SMS",
   "whatsapp": "WhatsApp",
-  "web": "Web"
+  "web": "Web",
+  "me": "mio",
+  "assigned_to": "Asignado a"
 }
