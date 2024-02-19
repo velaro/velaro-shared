@@ -136,5 +136,13 @@
   "web": "Web",
   "me": "mio",
   "assigned_to": "Asignado a",
-  "assign_to_me": "Asignar a mi"
+  "assign_to_me": "Asignar a mi",
+  "minute": "minuto",
+  "minutes": "minutos",
+  "hour": "hora",
+  "hours": "horas",
+  "waiting": "Esperando",
+  "conversation_will_be_unassigned": "La conversacion se desasignara en",
+  "ongoing_bot_conversation": "Conversacion en curso con el bot",
+  "prior_bot_conversation": "Conversacion previa con el bot"
 }
