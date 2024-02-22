@@ -155,5 +155,11 @@
   "search_field_type": "Buscar Tipo de Campo",
   "search_results": "Resultados de la Busqueda",
   "add": "Agregar",
-  "to": "A"
+  "to": "A",
+  "customer": "Clienta",
+  "account": "Cuenta",
+  "supportcase": "Caso de Soporte",
+  "lead": "Cliente Potencial",
+  "prospect": "Prospecto",
+  "order": "Pedido"
 }

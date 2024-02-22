@@ -155,5 +155,11 @@
   "search_field_type": "Search Field Type",
   "search_results": "Search Results",
   "add": "Add",
-  "to": "To"
+  "to": "To",
+  "customer": "Customer",
+  "account": "Account",
+  "supportcase": "Support Case",
+  "lead": "Lead",
+  "prospect": "Prospect",
+  "order": "Order"
 }
