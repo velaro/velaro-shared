@@ -150,5 +150,10 @@
   "netsuite_record_type": "NetSuite Record Type",
   "netsuite_field_type": "NetSuite Field Type",
   "search_value": "Search Value",
-  "pre_chat_survey_team_name": "Pre-Chat Survey - [[teamname]]"
+  "pre_chat_survey_team_name": "Pre-Chat Survey - [[teamname]]",
+  "search_record_type": "Search Record Type",
+  "search_field_type": "Search Field Type",
+  "search_results": "Search Results",
+  "add": "Add",
+  "to": "To"
 }

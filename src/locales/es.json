@@ -150,5 +150,10 @@
   "netsuite_record_type": "NetSuite Tipo de Registro",
   "netsuite_field_type": "NetSuite Tipo de Campo",
   "search_value": "Valor de Busqueda",
-  "pre_chat_survey_team_name": "Encuesta previa al chat - [[teamname]]"
+  "pre_chat_survey_team_name": "Encuesta previa al chat - [[teamname]]",
+  "search_record_type": "Buscar Tipo de Registro",
+  "search_field_type": "Buscar Tipo de Campo",
+  "search_results": "Resultados de la Busqueda",
+  "add": "Agregar",
+  "to": "A"
 }
