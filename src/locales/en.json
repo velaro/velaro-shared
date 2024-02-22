@@ -144,5 +144,11 @@
   "waiting": "Waiting",
   "conversation_will_be_unassigned": "Conversation will be unassigned in ",
   "ongoing_bot_conversation": "Ongoing Bot Conversation",
-  "prior_bot_conversation": "Prior Bot Conversation"
+  "prior_bot_conversation": "Prior Bot Conversation",
+  "select": "Select",
+  "netsuite_login": "NetSuite Login",
+  "netsuite_record_type": "NetSuite Record Type",
+  "netsuite_field_type": "NetSuite Field Type",
+  "search_value": "Search Value",
+  "pre_chat_survey_team_name": "Pre-Chat Survey - [[teamname]]"
 }

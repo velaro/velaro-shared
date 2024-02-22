@@ -144,5 +144,11 @@
   "waiting": "Esperando",
   "conversation_will_be_unassigned": "La conversacion se desasignara en",
   "ongoing_bot_conversation": "Conversacion en curso con el bot",
-  "prior_bot_conversation": "Conversacion previa con el bot"
+  "prior_bot_conversation": "Conversacion previa con el bot",
+  "select": "Seleccionar",
+  "netsuite_login": "NetSuite Acceso",
+  "netsuite_record_type": "NetSuite Tipo de Registro",
+  "netsuite_field_type": "NetSuite Tipo de Campo",
+  "search_value": "Valor de Busqueda",
+  "pre_chat_survey_team_name": "Encuesta previa al chat - [[teamname]]"
 }
