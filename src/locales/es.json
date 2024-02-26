@@ -161,5 +161,7 @@
   "supportcase": "Caso de Soporte",
   "lead": "Cliente Potencial",
   "prospect": "Prospecto",
-  "order": "Pedido"
+  "order": "Pedido",
+  "has_joined_the_conversation": "[[user]] ha ingresado a la conversacion",
+  "transferring_conversation_to": "Transfiriendo la conversacion a [[user]]"
 }
