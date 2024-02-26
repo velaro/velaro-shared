@@ -165,5 +165,6 @@
   "has_joined_the_conversation": "[[user]] ha ingresado a la conversacion",
   "transferring_conversation_to": "Transfiriendo la conversacion a [[user]]",
   "has_left_the_conversation": "[[user]] ha abandonado la conversacion",
-  "is_typing": "esta escribiendo"
+  "is_typing": "esta escribiendo",
+  "notifications": "Notificaciones"
 }
