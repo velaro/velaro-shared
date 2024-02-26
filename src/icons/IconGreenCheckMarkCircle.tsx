@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "./types";
 
-function IconCheckMarkCircle(props: IconProps) {
+function IconCheckMarkCircle(_props: IconProps) {
   return (
     <svg
       width="24"
