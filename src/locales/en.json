@@ -166,5 +166,10 @@
   "transferring_conversation_to": "Transferring conversation to [[user]]",
   "has_left_the_conversation": "[[user]] has left the conversation",
   "is_typing": "is typing ",
-  "notifications": "Notifications"
+  "notifications": "Notifications",
+  "set_this_as": "set this as",
+  "auto_resolved_text": "Reached maximum waiting time.  Automatically set as",
+  "auto_closed": "Auto-closed",
+  "conversation_closed": "Conversation closed",
+  "end_of_conversation": "End of conversation"
 }
