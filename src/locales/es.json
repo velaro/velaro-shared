@@ -171,5 +171,7 @@
   "auto_closed_text": "Tiempo de espera maximo alcanzado.  Establecido automaticamente como",
   "auto_closed": "Auto-cerrado",
   "conversation_closed": "Conversacion cerrada",
-  "end_of_conversation": "Fin de la conversacion"
+  "end_of_conversation": "Fin de la conversacion",
+  "add_conversation_topic": "Agregar tema de conversacion",
+  "max_thirty_character": "Maximo 30 caracteres"
 }

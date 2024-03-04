@@ -171,5 +171,7 @@
   "auto_closed_text": "Reached maximum waiting time.  Automatically set as",
   "auto_closed": "Auto-closed",
   "conversation_closed": "Conversation closed",
-  "end_of_conversation": "End of conversation"
+  "end_of_conversation": "End of conversation",
+  "add_conversation_topic": "Add conversation topic",
+  "max_thirty_character": "Max. 30 characters"
 }
