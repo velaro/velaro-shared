@@ -173,5 +173,7 @@
   "conversation_closed": "Conversation closed",
   "end_of_conversation": "End of conversation",
   "add_conversation_topic": "Add conversation topic",
-  "max_thirty_character": "Max. 30 characters"
+  "max_thirty_character": "Max. 30 characters",
+  "saving_ellipses": "Saving�",
+  "save": "Save"
 }
