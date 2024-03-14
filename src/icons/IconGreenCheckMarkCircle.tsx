@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "./types";
 
-function IconCheckMarkCircle(props: IconProps) {
+function IconGreenCheckMarkCircle(props: IconProps) {
   return (
     <svg
       width="24"
@@ -16,8 +16,8 @@ function IconCheckMarkCircle(props: IconProps) {
         fill="#2FBF71"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M18.8243 7.17574C19.0586 7.41005 19.0586 7.78995 18.8243 8.02426L10.0243 16.8243C9.78995 17.0586 9.41005 17.0586 9.17574 16.8243L5.17574 12.8243C4.94142 12.5899 4.94142 12.2101 5.17574 11.9757C5.41005 11.7414 5.78995 11.7414 6.02426 11.9757L9.6 15.5515L17.9757 7.17574C18.21 6.94142 18.5899 6.94142 18.8243 7.17574Z"
         fill="white"
       />
@@ -25,4 +25,4 @@ function IconCheckMarkCircle(props: IconProps) {
   );
 }
 
-export default IconCheckMarkCircle;
+export default IconGreenCheckMarkCircle;
