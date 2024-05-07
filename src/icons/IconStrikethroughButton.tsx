@@ -1,7 +1,6 @@
 import React from "react";
-import { IconProps } from "./types";
 
-function IconStrikethroughButton(props: IconProps) {
+function IconStrikethroughButton() {
   return (
     <svg
       width="16"

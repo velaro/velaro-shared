@@ -1,7 +1,6 @@
 import React from "react";
-import { IconProps } from "./types";
 
-function IconListButton(props: IconProps) {
+function IconListButton() {
   return (
     <svg
       width="16"

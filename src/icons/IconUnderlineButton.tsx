@@ -1,7 +1,6 @@
 import React from "react";
-import { IconProps } from "./types";
 
-function IconUnderlineButton(props: IconProps) {
+function IconUnderlineButton() {
   return (
     <svg
       width="14"

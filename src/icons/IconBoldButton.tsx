@@ -1,7 +1,6 @@
 import React from "react";
-import { IconProps } from "./types";
 
-function IconBoldButton(props: IconProps) {
+function IconBoldButton() {
   return (
     <svg
       width="12"

@@ -1,7 +1,6 @@
 import React from "react";
-import { IconProps } from "./types";
 
-function IconItalicsButton(props: IconProps) {
+function IconItalicsButton() {
   return (
     <svg
       width="12"
