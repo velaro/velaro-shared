@@ -1,7 +1,7 @@
 import React from "react";
 import { IconProps } from "./types";
 
-function IconVeritcalEllipsis(props: IconProps) {
+function IconVerticalEllipsis(props: IconProps) {
   return (
     <svg
       width="16"
@@ -31,4 +31,4 @@ function IconVeritcalEllipsis(props: IconProps) {
   );
 }
 
-export default IconVeritcalEllipsis;
+export default IconVerticalEllipsis;
