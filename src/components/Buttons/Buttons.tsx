@@ -29,7 +29,7 @@ export function PrimaryBlueButton(props: Props) {
       className={className}
     >
       {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
-      {"wtf"}
+      {props.label}
       {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
