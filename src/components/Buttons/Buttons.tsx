@@ -4,10 +4,12 @@ import { IconProps } from "../../icons/types";
 interface Props {
   label?: string;
   onClick(e: React.MouseEvent): void;
-  icon?: (props: IconProps) => React.JSX.Element;
+  prefixIcon?: (props: IconProps) => React.JSX.Element;
+  suffixIcon?: (props: IconProps) => React.JSX.Element;
   disabled?: boolean;
   size?: "sm" | "md";
 }
+
 export function PrimaryBlueButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
@@ -18,13 +20,15 @@ export function PrimaryBlueButton(props: Props) {
     className += ` bg-cornflower-blue-500 border-cornflower-blue-500 hover:bg-cornflower-blue-400 hover:border-cornflower-blue-400 active:bg-cornflower-blue-700 active:border-cornflower-blue-700`;
   }
 
+  const iconClassName = "text-white";
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.icon && <props.icon className="text-white" />}
+      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
       {props.label}
+      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
 }
@@ -38,18 +42,18 @@ export function PrimaryGrayButton(props: Props) {
   } else {
     className += ` text-slate-500 bg-slate-100 border-slate-100 hover:border-slate-500 active:bg-indigo-50 active:border-blue-500 `;
   }
+  const iconClassName = `${
+    props.disabled ? "text-slate-300" : "text-slate-500"
+  }`;
 
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.icon && (
-        <props.icon
-          className={`${props.disabled ? "text-slate-300" : "text-slate-500"}`}
-        />
-      )}
+      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
       {props.label}
+      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
 }
@@ -64,21 +68,20 @@ export function SecondaryBlueButton(props: Props) {
     className += ` bg-white border-blue-500 hover:bg-slate-100 hover:border-blue-400 hover:text-blue-400 active:bg-indigo-50 active:border-blue-700 active:text-blue-700`;
   }
 
+  const iconClassName = `${
+    props.disabled
+      ? "text-slate-300"
+      : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
+  }`;
+
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.icon && (
-        <props.icon
-          className={`${
-            props.disabled
-              ? "text-slate-300"
-              : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
-          }`}
-        />
-      )}
+      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
       {props.label}
+      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
 }
@@ -93,21 +96,19 @@ export function SecondaryGrayButton(props: Props) {
     className += ` bg-white border-blue-500 hover:bg-slate-100 hover:border-blue-400 hover:text-blue-400 active:bg-indigo-50 active:border-blue-700 active:text-blue-700`;
   }
 
+  const iconClassName = `${
+    props.disabled
+      ? "text-slate-300"
+      : "text-slate-500 group-hover:text-slate-300 group-active:text-blue-500"
+  }`;
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.icon && (
-        <props.icon
-          className={`${
-            props.disabled
-              ? "text-slate-300"
-              : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
-          }`}
-        />
-      )}
+      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
       {props.label}
+      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
 }
@@ -121,22 +122,19 @@ export function TeriaryBlueButton(props: Props) {
   } else {
     className += ` hover:text-blue-400 active:text-blue-700 `;
   }
-
+  const iconClassName = `${
+    props.disabled
+      ? "text-slate-300"
+      : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
+  }`;
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.icon && (
-        <props.icon
-          className={`${
-            props.disabled
-              ? "text-slate-300"
-              : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
-          }`}
-        />
-      )}
+      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
       {props.label}
+      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
 }
@@ -151,21 +149,19 @@ export function TeriaryGrayButton(props: Props) {
     className += ` hover:text-slate-300 active:text-blue-500 `;
   }
 
+  const iconClassName = `${
+    props.disabled
+      ? "text-slate-300"
+      : "text-slate-500 group-hover:text-slate-300 group-active:text-blue-500"
+  }`;
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.icon && (
-        <props.icon
-          className={`${
-            props.disabled
-              ? "text-slate-300"
-              : "text-slate-500 group-hover:text-slate-300 group-active:text-blue-500"
-          }`}
-        />
-      )}
+      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
       {props.label}
+      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
     </div>
   );
 }
