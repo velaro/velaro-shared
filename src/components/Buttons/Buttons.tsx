@@ -3,7 +3,7 @@ import { IconProps } from "../../icons/types";
 
 interface Props {
   label?: string;
-  onClick(): void;
+  onClick(e: React.MouseEvent): void;
   icon?: (props: IconProps) => React.JSX.Element;
   disabled?: boolean;
   size?: "sm" | "md";
