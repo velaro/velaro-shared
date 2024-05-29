@@ -21,6 +21,8 @@ export function PrimaryBlueButton(props: Props) {
   }
 
   const iconClassName = "text-white";
+  console.log("icons", props.prefixIcon, props.suffixIcon);
+
   return (
     <div
       onClick={props.disabled ? undefined : props.onClick}
