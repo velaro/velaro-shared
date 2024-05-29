@@ -11,7 +11,7 @@ interface Props {
 export function PrimaryBlueButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} grow shrink basis-0 rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-white`;
+  let className = `${sizeClasses} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-white cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-300  border-slate-300`;
   } else {
@@ -32,7 +32,7 @@ export function PrimaryBlueButton(props: Props) {
 export function PrimaryGrayButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} grow shrink basis-0 rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center`;
+  let className = `${sizeClasses} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-100 border-slate-100 text-slate-300 `;
   } else {
@@ -57,7 +57,7 @@ export function PrimaryGrayButton(props: Props) {
 export function SecondaryBlueButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} grow shrink basis-0 rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-blue-500 group`;
+  let className = `${sizeClasses} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-blue-500 group cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-100  border-slate-100`;
   } else {
@@ -86,7 +86,7 @@ export function SecondaryBlueButton(props: Props) {
 export function SecondaryGrayButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} grow shrink basis-0 rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-blue-500 group`;
+  let className = `${sizeClasses} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-blue-500 group cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-100  border-slate-100`;
   } else {
@@ -115,7 +115,7 @@ export function SecondaryGrayButton(props: Props) {
 export function TeriaryBlueButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} grow shrink basis-0 justify-center items-center gap-2 inline-flex text-center text-blue-500 group`;
+  let className = `${sizeClasses} justify-center items-center gap-2 inline-flex text-center text-blue-500 group cursor-pointer`;
   if (props.disabled) {
     className += ` text-slate-300`;
   } else {
@@ -144,7 +144,7 @@ export function TeriaryBlueButton(props: Props) {
 export function TeriaryGrayButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} grow shrink basis-0 justify-center items-center gap-2 inline-flex text-center text-slate-500 group`;
+  let className = `${sizeClasses} justify-center items-center gap-2 inline-flex text-center text-slate-500 group cursor-pointer`;
   if (props.disabled) {
     className += ` text-slate-300`;
   } else {
