@@ -30,6 +30,12 @@ export default function CustomizableSelect({
     action();
   };
 
+  window.addEventListener("click", (e) => {
+    if (e.target !== document.querySelector(".absolute")) {
+      setClicked(false);
+    }
+  });
+
   return (
     <>
       <div
