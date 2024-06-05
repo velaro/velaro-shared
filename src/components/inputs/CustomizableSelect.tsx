@@ -32,15 +32,12 @@ export default function CustomizableSelect({
   };
 
   const handleClickOutside = (event: MouseEvent) => {
-    console.log("Click detected");
     if (
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target as Node)
     ) {
-      console.log("Click detected outside the dropdown");
       setClicked(false);
     } else {
-      console.log("Click detected inside the dropdown");
     }
   };
 
