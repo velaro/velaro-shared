@@ -3,7 +3,7 @@ import CustomizableSelectOption from "./CustomizableSelectOption";
 
 interface Option {
   label: string;
-  sublabel: string;
+  sublabel?: string;
   icon?: any;
   action: () => void;
 }
