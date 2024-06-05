@@ -53,6 +53,7 @@ export default function CustomizableSelect({
   return (
     <>
       <div
+        ref={dropdownRef}
         className="inline-block p-2 border border-gray-300 rounded-md bg-white cursor-pointer relative w-full"
         onClick={handleDropdownClick}
       >
@@ -83,8 +84,9 @@ export default function CustomizableSelect({
         </span>
         {clicked && (
           <div className="p-2 rounded-md border-[1px] shadow-md bg-white z-10 absolute left-0 right-0 mt-2">
-            {options.map((option) => (
+            {options.map((option, key) => (
               <CustomizableSelectOption
+                key={key}
                 icon={option.icon}
                 text={option.label}
                 subtext={option.sublabel}
