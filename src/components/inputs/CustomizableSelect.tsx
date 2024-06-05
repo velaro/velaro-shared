@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CustomizableSelectOption from "./CustomizableSelectOption";
 
 interface Option {
@@ -19,6 +19,7 @@ export default function CustomizableSelect({
 }: Props) {
   const [clicked, setClicked] = useState(false);
   const [selected, setSelected] = useState<Option | null>();
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleDropdownClick = () => {
     setClicked(!clicked);
@@ -30,11 +31,18 @@ export default function CustomizableSelect({
     action();
   };
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== document.querySelector(".absolute")) {
+  const handleClickOutside = (event: any) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
       setClicked(false);
     }
-  });
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
