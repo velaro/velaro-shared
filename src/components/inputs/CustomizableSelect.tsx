@@ -36,14 +36,17 @@ export default function CustomizableSelect({
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target as Node)
     ) {
+      console.log("Click detected outside the dropdown");
       setClicked(false);
+    } else {
+      console.log("Click detected inside the dropdown");
     }
   };
 
   useEffect(() => {
-    document.addEventListener("click", handleClickOutside, true);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("click", handleClickOutside, true);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
