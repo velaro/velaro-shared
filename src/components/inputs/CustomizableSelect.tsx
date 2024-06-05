@@ -32,6 +32,7 @@ export default function CustomizableSelect({
   };
 
   const handleClickOutside = (event: MouseEvent) => {
+    console.log("Click detected");
     if (
       dropdownRef.current &&
       !dropdownRef.current.contains(event.target as Node)
@@ -86,7 +87,7 @@ export default function CustomizableSelect({
           <div className="p-2 rounded-md border-[1px] shadow-md bg-white z-10 absolute left-0 right-0 mt-2">
             {options.map((option, key) => (
               <CustomizableSelectOption
-                key={key}
+                key={option.label + key}
                 icon={option.icon}
                 text={option.label}
                 subtext={option.sublabel}
