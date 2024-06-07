@@ -90,17 +90,17 @@ export function SecondaryBlueButton(props: Props) {
 export function SecondaryGrayButton(props: Props) {
   const sizeClasses =
     props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
-  let className = `${sizeClasses} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-blue-500 group cursor-pointer`;
+  let className = `${sizeClasses} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-gray-500 group cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-100  border-slate-100`;
   } else {
-    className += ` bg-white border-blue-500 hover:bg-slate-100 hover:border-blue-400 hover:text-blue-400 active:bg-indigo-50 active:border-blue-700 active:text-blue-700`;
+    className += ` bg-white border-slate-300 hover:bg-slate-100 hover:border-slate-500 hover:text-slate-500 active:bg-indigo-50 active:border-blue-700 active:text-slate-500`;
   }
 
   const iconClassName = `${
     props.disabled
       ? "text-slate-300"
-      : "text-slate-500 group-hover:text-slate-300 group-active:text-blue-500"
+      : "text-slate-500 group-hover:text-slate-300 group-active:text-slate-500"
   }`;
   return (
     <div
