@@ -15,7 +15,7 @@ function IconHash(props: IconProps) {
         <path
           id="Vector"
           d="M2.66675 5.83333H13.3334M2.66675 11.1667H13.3334M5.33341 2.5V14.5M10.6667 2.5V14.5"
-          stroke="#64748B"
+          stroke="currentColor"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
