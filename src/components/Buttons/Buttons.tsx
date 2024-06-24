@@ -20,7 +20,7 @@ export function PrimaryBlueButton(props: Props) {
     className += ` bg-cornflower-blue-500 border-cornflower-blue-500 hover:bg-cornflower-blue-400 hover:border-cornflower-blue-400 active:bg-cornflower-blue-700 active:border-cornflower-blue-700`;
   }
 
-  const iconClassName = "text-white";
+  const iconClassName = "text-white stoke-white fill-white";
 
   return (
     <div
@@ -44,7 +44,9 @@ export function PrimaryGrayButton(props: Props) {
     className += ` text-slate-500 bg-slate-100 border-slate-100 hover:border-slate-500 active:bg-indigo-50 active:border-blue-500 `;
   }
   const iconClassName = `${
-    props.disabled ? "text-slate-300" : "text-slate-500"
+    props.disabled
+      ? "text-slate-300 stroke-slate-300 fill-slate-300"
+      : "text-slate-500 stroke-slate-500 fill-slate-500"
   }`;
 
   return (
@@ -71,8 +73,8 @@ export function SecondaryBlueButton(props: Props) {
 
   const iconClassName = `${
     props.disabled
-      ? "text-slate-300"
-      : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
+      ? "text-slate-300 stoke-slate-300 fill-slate-300"
+      : "text-blue-500 stoke-blue-500 fill-blue-500 group-hover:text-blue-400 group-active:text-blue-700 group-hover:stoke-blue-400 group-active:stoke-blue-700 group-hover:fill-blue-400 group-active:fill-blue-700"
   }`;
 
   return (
@@ -99,8 +101,8 @@ export function SecondaryGrayButton(props: Props) {
 
   const iconClassName = `${
     props.disabled
-      ? "text-slate-300"
-      : "text-slate-500 group-hover:text-slate-300 group-active:text-slate-500"
+      ? "text-slate-300 stoke-slate-300 fill-slate-300"
+      : "text-slate-500 stoke-slate-500 fill-slate-500 group-hover:text-slate-300 group-active:text-slate-500 group-hover:stoke-slate-500 group-active:stoke-slate-500 group-hover:fill-slate-500 group-active:fill-slate-500"
   }`;
   return (
     <div
@@ -125,8 +127,8 @@ export function TeriaryBlueButton(props: Props) {
   }
   const iconClassName = `${
     props.disabled
-      ? "text-slate-300"
-      : "text-blue-500 group-hover:text-blue-400 group-active:text-blue-700"
+      ? "text-slate-300 stoke-slate-300 fill-slate-300"
+      : "text-blue-500 stoke-blue-500 fill-blue-500 group-hover:text-blue-400 group-active:text-blue-700 group-hover:stoke-blue-400 group-active:stoke-blue-700 group-hover:fill-blue-400 group-active:fill-blue-700"
   }`;
   return (
     <div
@@ -152,8 +154,8 @@ export function TeriaryGrayButton(props: Props) {
 
   const iconClassName = `${
     props.disabled
-      ? "text-slate-300"
-      : "text-slate-500 group-hover:text-slate-300 group-active:text-blue-500"
+      ? "text-slate-300 stoke-slate-300 fill-slate-300"
+      : "text-slate-500 stoke-slate-500 fill-slate-500 group-hover:text-slate-300 group-active:text-blue-500 group-hover:stoke-slate-500 group-active:stoke-slate-500 group-hover:fill-slate-500 group-active:fill-slate-500"
   }`;
   return (
     <div
