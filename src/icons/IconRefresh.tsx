@@ -9,6 +9,7 @@ function IconRefresh(props: IconProps) {
       viewBox="0 0 16 16"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      stroke={props.stroke}
     >
       <g id="refresh-cw-05">
         <g id="Vector">
