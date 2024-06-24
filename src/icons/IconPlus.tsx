@@ -15,7 +15,6 @@ function IconPlus(props: IconProps) {
         <path
           id="Vector"
           d="M7.99992 3.83398V13.1673M3.33325 8.50065H12.6666"
-          stroke="#3383EC"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
