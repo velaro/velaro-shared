@@ -1,5 +1,9 @@
 import * as React from "react";
 import { useCallback, useEffect, useMemo, useState } from "react";
+import IconDoubleForwardArrow from "../icons/IconDoubleForwardArrow";
+import IconForwardArrow from "../icons/IconForwardArrow";
+import IconBackArrow from "../icons/IconBackArrow";
+import IconDoubleBackArrow from "../icons/IconDoubleBackArrow";
 
 interface Props {
   currentPage: number;
@@ -107,14 +111,14 @@ export default function Pager({
           className="text-slate-500 mr-2"
           onClick={first}
         >
-          <i className="fa fa-angle-double-left" />
+          <IconDoubleBackArrow />
         </button>
         <button
           disabled={currentPage === 1}
           className="text-slate-500 m-2"
           onClick={previous}
         >
-          <i className="fa fa-angle-left" />
+          <IconBackArrow />
         </button>
         {visiblePages[0] > 1 && (
           <li className={pagerStyle} onClick={() => handlePageChange(1)}>
@@ -157,14 +161,14 @@ export default function Pager({
           className="text-slate-500 m-2"
           onClick={next}
         >
-          <i className="fa fa-angle-right" />
+          <IconForwardArrow />
         </button>
         <button
           disabled={currentPage === pageCount}
           className="text-slate-500 ml-2"
           onClick={last}
         >
-          <i className="fa fa-angle-double-right" />
+          <IconDoubleForwardArrow />
         </button>
       </div>
       <div className="flex items-center">
