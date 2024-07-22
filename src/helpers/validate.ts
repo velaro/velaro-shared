@@ -3,7 +3,10 @@ export default function validate(
   type: string,
   required: boolean
 ) {
-  if (required && (!value || value == "undefined")) {
+  if (
+    required &&
+    (!value || value == "undefined" || value == "--select an option--")
+  ) {
     return "A value is required";
   }
 
