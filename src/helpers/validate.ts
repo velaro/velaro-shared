@@ -7,10 +7,6 @@ export default function validate(
     return "A value is required";
   }
 
-  if (type == "choice" && value == "--select an option--") {
-    return "Please select an option";
-  }
-
   if (!value) {
     return null;
   }
