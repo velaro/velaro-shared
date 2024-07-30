@@ -175,7 +175,7 @@ export default function Pager({
         <span className="text-slate-500 text-xs">Items per page</span>
         <input
           type="text"
-          className="w-6 h-6 border border-slate-200 rounded-lg ml-2 text-xs text-center"
+          className="w-6 h-6 border border-slate-200 rounded ml-2 text-xs text-center"
           value={workingPageSize}
           onChange={(e) => handlePageSizeChange(e)}
         />
