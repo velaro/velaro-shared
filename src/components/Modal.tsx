@@ -43,7 +43,7 @@ function Modal(props: ModalProps) {
 function ModalHeader(props: HeaderProps) {
   return (
     <div className="modal-header rounded-t ">
-      <div className="m-4 text-lg font-semibold flex justify-between">
+      <div className="m-4 text-lg font-medium flex justify-between">
         <div>{props.title}</div>
         <button onClick={() => props.onClose()}>
           <IconClose1 />
