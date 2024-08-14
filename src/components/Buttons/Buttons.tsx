@@ -4,8 +4,8 @@ import { IconProps } from "../../icons/types";
 interface Props {
   label?: string;
   onClick(e: React.MouseEvent): void;
-  prefixIcon?: (props: IconProps) => React.JSX.Element;
-  suffixIcon?: (props: IconProps) => React.JSX.Element;
+  prefixIcon?: (props: IconProps) => React.JSX.Element | React.JSX.Element;
+  suffixIcon?: (props: IconProps) => React.JSX.Element | React.JSX.Element;
   disabled?: boolean;
   className?: string;
   size?: "sm" | "md";
