@@ -4,8 +4,8 @@ import { IconProps } from "../../icons/types";
 interface Props {
   label?: string;
   onClick(e: React.MouseEvent): void;
-  prefixIcon?: (props: IconProps) => React.JSX.Element;
-  suffixIcon?: (props: IconProps) => React.JSX.Element;
+  prefixIcon?: React.ReactNode;
+  suffixIcon?: React.ReactNode;
   disabled?: boolean;
   className?: string;
   size?: "sm" | "md";
@@ -28,9 +28,13 @@ export function PrimaryBlueButton(props: Props) {
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
+      {props.prefixIcon && (
+        <div className={iconClassName}>{props.prefixIcon}</div>
+      )}
       {props.label}
-      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
+      {props.suffixIcon && (
+        <div className={iconClassName}>{props.suffixIcon}</div>
+      )}
     </div>
   );
 }
@@ -55,9 +59,13 @@ export function PrimaryGrayButton(props: Props) {
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
+      {props.prefixIcon && (
+        <div className={iconClassName}>{props.prefixIcon}</div>
+      )}
       {props.label}
-      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
+      {props.suffixIcon && (
+        <div className={iconClassName}>{props.suffixIcon}</div>
+      )}
     </div>
   );
 }
@@ -83,9 +91,13 @@ export function SecondaryBlueButton(props: Props) {
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
+      {props.prefixIcon && (
+        <div className={iconClassName}>{props.prefixIcon}</div>
+      )}
       {props.label}
-      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
+      {props.suffixIcon && (
+        <div className={iconClassName}>{props.suffixIcon}</div>
+      )}
     </div>
   );
 }
@@ -110,9 +122,13 @@ export function SecondaryGrayButton(props: Props) {
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
+      {props.prefixIcon && (
+        <div className={iconClassName}>{props.prefixIcon}</div>
+      )}
       {props.label}
-      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
+      {props.suffixIcon && (
+        <div className={iconClassName}>{props.suffixIcon}</div>
+      )}
     </div>
   );
 }
@@ -136,9 +152,13 @@ export function TeriaryBlueButton(props: Props) {
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
+      {props.prefixIcon && (
+        <div className={iconClassName}>{props.prefixIcon}</div>
+      )}
       {props.label}
-      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
+      {props.suffixIcon && (
+        <div className={iconClassName}>{props.suffixIcon}</div>
+      )}
     </div>
   );
 }
@@ -163,9 +183,13 @@ export function TeriaryGrayButton(props: Props) {
       onClick={props.disabled ? undefined : props.onClick}
       className={className}
     >
-      {props.prefixIcon && <props.prefixIcon className={iconClassName} />}
+      {props.prefixIcon && (
+        <div className={iconClassName}>{props.prefixIcon}</div>
+      )}
       {props.label}
-      {props.suffixIcon && <props.suffixIcon className={iconClassName} />}
+      {props.suffixIcon && (
+        <div className={iconClassName}>{props.suffixIcon}</div>
+      )}
     </div>
   );
 }
