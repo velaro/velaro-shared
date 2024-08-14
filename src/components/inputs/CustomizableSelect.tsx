@@ -11,14 +11,16 @@ interface Option {
 interface Props {
   options: Option[];
   defaultText?: string;
+  defaultOption?: Option | null;
 }
 
 export default function CustomizableSelect({
   options,
-  defaultText = "Select an option"
+  defaultText = "Select an option",
+  defaultOption = null
 }: Props) {
   const [clicked, setClicked] = useState(false);
-  const [selected, setSelected] = useState<Option | null>();
+  const [selected, setSelected] = useState<Option | null>(defaultOption);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const handleDropdownClick = () => {
@@ -37,7 +39,6 @@ export default function CustomizableSelect({
       !dropdownRef.current.contains(event.target as Node)
     ) {
       setClicked(false);
-    } else {
     }
   };
 
