@@ -15,10 +15,14 @@ interface Props {
   defaultOption?: Option | null;
 }
 
-export default function CustomizableSelect(props: Props) {
+export default function CustomizableSelect({
+  options,
+  defaultText = "Select an option",
+  defaultOption
+}: Props) {
   const [clicked, setClicked] = useState(false);
   const [selected, setSelected] = useState<Option | null>(
-    props.defaultOption ? props.defaultOption : null
+    defaultOption || null
   );
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -49,8 +53,8 @@ export default function CustomizableSelect(props: Props) {
   }, []);
 
   // useEffect(() => {
-  //   setSelected(props.defaultOption);
-  // }, [props.defaultOption]);
+  //   setSelected(defaultOption);
+  // }, [defaultOption]);
 
   return (
     <>
@@ -66,7 +70,7 @@ export default function CustomizableSelect(props: Props) {
             <div className="pl-2 text-slate-500">{selected.sublabel}</div>
           </div>
         ) : (
-          props.defaultText
+          defaultText
         )}
         <span className="absolute top-1/2 right-2 transform -translate-y-1/2 pointer-events-none">
           <svg
@@ -86,7 +90,7 @@ export default function CustomizableSelect(props: Props) {
         </span>
         {clicked && (
           <div className="p-2 rounded-md border-[1px] shadow-md bg-white z-10 absolute left-0 right-0 mt-2">
-            {props.options.map((option, key) => (
+            {options.map((option, key) => (
               <CustomizableSelectOption
                 key={option.label + key}
                 icon={option.icon}
