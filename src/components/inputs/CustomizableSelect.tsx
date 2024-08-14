@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import CustomizableSelectOption from "./CustomizableSelectOption";
+import { set } from "lodash";
 
 interface Option {
   label: string;
@@ -48,6 +49,10 @@ export default function CustomizableSelect({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  useEffect(() => {
+    setSelected(defaultOption);
+  }, [defaultOption]);
 
   return (
     <>
