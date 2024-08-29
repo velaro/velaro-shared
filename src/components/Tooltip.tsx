@@ -90,7 +90,7 @@ export default function Tooltip({
   return (
     <span className="relative tooltip">
       <span
-        className="absolute py-1 text-sm text-center text-gray-100 rounded-sm shadow-sm tooltip-text p-1 z-[99999]"
+        className="absolute py-1 px-2 text-sm text-center text-gray-100 rounded-sm shadow-sm tooltip-text z-[99999]"
         style={{
           ...style,
           width: width,
