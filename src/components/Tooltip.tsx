@@ -3,19 +3,19 @@ import React, { useMemo } from "react";
 interface Props {
   children: JSX.Element;
   text: string;
-  width?: string;
+  maxWidth?: string;
   direction?: "right" | "left" | "top" | "bottom";
   offset?: string;
-  minWidth?: string;
+  color?: "default" | "blue" | "light";
 }
 
 export default function Tooltip({
   children,
   text,
-  width = "auto",
+  maxWidth = "16rem",
   direction = "right",
   offset = "15px",
-  minWidth = "200px"
+  color = "default"
 }: Props) {
   const style = useMemo(() => {
     switch (direction) {
@@ -46,6 +46,18 @@ export default function Tooltip({
     }
   }, [direction, offset]);
 
+  const carrotColor = useMemo(() => {
+    switch (color) {
+      case "blue":
+        return "#3B82F6";
+      case "light":
+        return "#FFFFFF";
+      case "default":
+      default:
+        return "#0F172A";
+    }
+  }, [color]);
+
   const carrotStyle = useMemo(() => {
     switch (direction) {
       case "bottom":
@@ -53,7 +65,7 @@ export default function Tooltip({
           top: "-7px",
           left: "50%",
           transform: "translateX(-50%)",
-          borderBottom: "7px solid #0F172A",
+          borderBottom: `7px solid ${carrotColor}`,
           borderLeft: "7px solid transparent",
           borderRight: "7px solid transparent"
         };
@@ -64,14 +76,14 @@ export default function Tooltip({
           transform: "translateY(-50%)",
           borderTop: "7px solid transparent",
           borderBottom: "7px solid transparent",
-          borderRight: "7px solid #0F172A"
+          borderRight: `7px solid ${carrotColor}`
         };
       case "top":
         return {
           bottom: "-7px",
           left: "50%",
           transform: "translateX(-50%)",
-          borderTop: "7px solid #0F172A",
+          borderTop: `7px solid ${carrotColor}`,
           borderLeft: "7px solid transparent",
           borderRight: "7px solid transparent"
         };
@@ -82,20 +94,33 @@ export default function Tooltip({
           transform: "translateY(-50%)",
           borderTop: "7px solid transparent",
           borderBottom: "7px solid transparent",
-          borderLeft: "7px solid #0F172A"
+          borderLeft: `7px solid ${carrotColor}`
         };
     }
-  }, [direction]);
+  }, [direction, carrotColor]);
+
+  const tooltipColors = useMemo(() => {
+    switch (color) {
+      case "blue":
+        return "bg-blue-500 text-white";
+      case "light":
+        return "bg-white text-slate-800";
+      case "default":
+      default:
+        return "bg-slate-900 text-gray-100";
+    }
+  }, [color]);
 
   return (
     <span className="relative tooltip">
       <span
-        className="absolute py-1 px-2 text-sm text-center text-gray-100 rounded-sm shadow-sm tooltip-text z-[99999]"
+        className={`absolute py-2 px-2 text-sm text-gray-100 rounded-md shadow-xl z-[99999] block ${tooltipColors}`}
         style={{
           ...style,
-          width: width,
-          minWidth: minWidth,
-          background: "#0F172A"
+          maxWidth,
+          width: "max-content",
+          whiteSpace: "normal",
+          wordBreak: "break-word"
         }}
       >
         <span className="absolute" style={carrotStyle}></span>
