@@ -1,5 +1,4 @@
 import React from "react";
-import { IconProps } from "../../icons/types";
 
 interface Props {
   label?: string;

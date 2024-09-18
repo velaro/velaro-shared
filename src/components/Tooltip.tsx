@@ -114,7 +114,7 @@ export default function Tooltip({
   return (
     <span className="relative tooltip">
       <span
-        className={`absolute py-2 px-2 text-sm text-gray-100 rounded-md shadow-xl z-[99999] block ${tooltipColors}`}
+        className={`tooltip-text absolute py-2 px-2 text-sm text-gray-100 rounded-md shadow-xl z-[99999] block ${tooltipColors}`}
         style={{
           ...style,
           maxWidth,
