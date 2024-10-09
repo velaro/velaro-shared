@@ -25,14 +25,14 @@ export default function DefaultTabs(props: DefaultTabsProps) {
     activeTextColor = "text-blue-600",
     disabledColor = "bg-slate-200",
     icon,
-    tabBorderColor="border-blue-500"
+    tabBorderColor = "border-blue-500"
   } = props;
 
-  const baseClass = "flex items-center cursor-pointer py-2 w-[220px]";
+  const baseClass = "flex items-center cursor-pointer py-2 w-[220px] font-medium";
   const orientationClass =
     orientation === "horizontal"
-      ? "border-b-2 justify-center"
-      : "border-l-2 pl-2";
+      ? "border-b-4 justify-center"
+      : "border-l-4 pl-2";
   const borderColor = active
     ? tabBorderColor
     : orientation === "vertical"
