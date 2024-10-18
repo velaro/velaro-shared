@@ -31,7 +31,7 @@ function Modal(props: ModalProps) {
   return createPortal(
     <div className="modal-backdrop py-10 fixed inset-0 z-50 overflow-auto bg-black bg-opacity-30 flex">
       <div
-        className={`modal rounded-2xl shadow-lg relative bg-white w-full m-auto flex-col flex ${maxWidth}`}
+        className={`modal rounded-2xl shadow-lg relative bg-white w-full m-auto flex-col flex ${maxWidth} p-6 `}
       >
         {props.children}
       </div>
@@ -43,7 +43,7 @@ function Modal(props: ModalProps) {
 function ModalHeader(props: HeaderProps) {
   return (
     <div className="modal-header rounded-t ">
-      <div className="m-4 text-lg font-medium flex justify-between">
+      <div className="mb-4 text-lg font-medium flex justify-between">
         <div>{props.title}</div>
         <button onClick={() => props.onClose()}>
           <IconClose1 />
@@ -59,7 +59,7 @@ function ModalBody(props: ModalBodyProps) {
 
 function ModalFooter(props: ModalFooterProps) {
   return (
-    <div className="modal-footer rounded-b border-t border-slate-gray-50">
+    <div className="modal-footer rounded-b border-t border-slate-gray-50 -mb-3">
       {props.children}
     </div>
   );
