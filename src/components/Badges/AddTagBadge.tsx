@@ -12,7 +12,7 @@ interface Props {
 
 export default function AddTagBadge(props: Props) {
   const pill = props.pill ? "rounded-full" : "rounded";
-  const size = props.size === "sm" ? "text-xs" : "";
+  const size = props.size === "sm" ? "text-sm" : "";
 
   const getBgColor = () => {
     return props.color ? badgeBgColors[props.color] : badgeBgColors["blue"];
