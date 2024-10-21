@@ -7,12 +7,18 @@ interface Props {
   suffixIcon?: React.ReactNode;
   disabled?: boolean;
   className?: string;
-  size?: "sm" | "md";
+  size?: "sm" | "md" | "base";
 }
 
 export function PrimaryBlueButton(props: Props) {
   const sizeClasses =
-    props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
+    // props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
+    props.size === "sm"
+      ? "text-xs h-8 px-3 py-2"
+      : props.size === "base"
+      ? "font-medium h-10 px-6 py-2.5"
+      : "text-sm h-10 px-6 py-2.5"
+
   let className = `${sizeClasses} ${props.className} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-white cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-300  border-slate-300`;
@@ -103,7 +109,12 @@ export function SecondaryBlueButton(props: Props) {
 
 export function SecondaryGrayButton(props: Props) {
   const sizeClasses =
-    props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
+    // props.size === "sm" ? "text-xs h-8 px-3 py-2" : "text-sm h-10 px-6 py-2.5";
+    props.size === "sm"
+      ? "text-xs h-8 px-3 py-2"
+      : props.size === "base"
+      ? "font-medium h-10 px-6 py-2.5"
+      : "text-sm h-10 px-6 py-2.5";
   let className = `${sizeClasses} ${props.className} rounded-lg border-2 justify-center items-center gap-2 inline-flex text-center text-gray-500 group cursor-pointer`;
   if (props.disabled) {
     className += ` bg-slate-100  border-slate-100`;
