@@ -28,7 +28,7 @@ export default function AddTagBadge(props: Props) {
       onClick={props.onClick}
     >
       {props.label}
-      <IconCloseCircle className={`w-4 h-4 ${getTextColor()} mr-1`} />
+      <IconCloseCircle className={`w-4 h-4 ${getTextColor()} ml-1`} />
     </span>
   );
 }
