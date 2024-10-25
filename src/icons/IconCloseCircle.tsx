@@ -9,6 +9,7 @@ function IconCloseCircle(props: IconProps) {
       viewBox="0 0 14 14"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <g id="Frame">
         <g clipPath="url(#clip0_4377_226)">
