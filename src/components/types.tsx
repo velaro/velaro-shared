@@ -11,7 +11,8 @@ export const badgeBgColors = {
   green: "bg-success-green-100",
   yellow: "bg-sweet-orange-100",
   purple: "bg-grape-100",
-  gray: "bg-slate-100"
+  gray: "bg-slate-100",
+  navy: "bg-steel-blue-100"
 };
 
 export type BadgeColor = keyof typeof badgeBgColors;
