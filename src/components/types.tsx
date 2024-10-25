@@ -23,5 +23,6 @@ export const badgeTextColors = {
   green: "text-success-green-300",
   yellow: "text-sweet-orange-300",
   purple: "text-grape-300",
-  gray: "text-slate-300"
+  gray: "text-slate-300",
+  navy: "text-steel-blue-300"
 };
