@@ -178,5 +178,6 @@
   "saving": "Saving",
   "save": "Save",
   "contacts": "Contacts",
-  "show_conversation_assigned_alerts":"Show alerts when a conversation is assigned to you"
+  "show_conversation_assigned_alerts":"Show alerts when a conversation is assigned to you",
+  "profile_details":"Profile Details"
 }

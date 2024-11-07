@@ -177,5 +177,6 @@
   "max_thirty_character": "Maximo 30 caracteres",
   "saving": "Guardando",
   "save": "Guardar",
-  "show_conversation_assigned_alerts":"Mostrar alertas cuando se le asigne una conversacion"
+  "show_conversation_assigned_alerts":"Mostrar alertas cuando se le asigne una conversacion",
+  "profile_details":"Profile Details"
 }
