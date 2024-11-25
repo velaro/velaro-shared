@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MenuItem } from "./MenuItem";
 import { IconProps } from "../icons/types";
 import IconMoreHorizontalDots from "../icons/IconMoreHorizontalDots";
@@ -13,15 +13,28 @@ export interface MeatballMenuItem {
   icon: ({ ...props }: IconProps) => React.JSX.Element;
 }
 
+function eventContainsElement(e: MouseEvent, element: HTMLElement): boolean {
+  let target = e.target as HTMLElement | null;
+  while (target) {
+    if (target === element) {
+      return true;
+    }
+    target = target.parentElement;
+  }
+  return false;
+}
+
 export default function MeatballMenu(props: Props) {
-  const [showMenu, setShowMenu] = React.useState(false);
-  const dotsRef = useRef<SVGSVGElement>(null);
+  const [showMenu, setShowMenu] = useState(false);
+  const dotsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function hideMenu(e: MouseEvent) {
-      if (e.target != dotsRef.current) {
-        setShowMenu(false);
+      if (dotsRef.current && eventContainsElement(e, dotsRef.current)) {
+        return;
       }
+
+      setShowMenu(false);
     }
     document.addEventListener("click", hideMenu);
     return () => {
@@ -31,8 +44,12 @@ export default function MeatballMenu(props: Props) {
 
   return (
     <div className="relative w-min">
-      <div onClick={() => setShowMenu(true)} className="cursor-pointer">
-        <IconMoreHorizontalDots ref={dotsRef} />
+      <div
+        ref={dotsRef}
+        onClick={() => setShowMenu((x) => !x)}
+        className="cursor-pointer"
+      >
+        <IconMoreHorizontalDots />
       </div>
       {showMenu && (
         <div className="absolute top-6 right-0 z-50 w-36 p-2 bg-white rounded shadow border border-slate-200 flex-col justify-start items-start inline-flex text-sm text-slate-800">
