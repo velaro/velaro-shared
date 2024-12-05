@@ -1,0 +1,20 @@
+import { useState, useEffect} from "react";
+
+export default function useIsMobile() {
+const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkDevice = () => {
+      const userAgent = navigator.userAgent;
+      console.log(userAgent);
+  
+      const mobileDevices = /iPhone|iPad|iPod|Android|Mobile/i;
+      setIsMobile(mobileDevices.test(userAgent));
+    };
+
+    checkDevice();
+  }, []);
+
+  return isMobile;
+  
+}
