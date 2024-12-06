@@ -14,14 +14,22 @@ const [isMobile, setIsMobile] = useState(false);
     checkDevice();
   }, []);
 
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(800);
+ 
+  //initialize the iframe size by asking parent for the size
+  useEffect(() => {}, []);
 
+  //listen to resize events from parent
   useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const receiveMessage = (event: MessageEvent) => {
+      if (event.data.message === "resize") {
+        setScreenWidth(event.data.innerWidth);
+      }
+    };
+    window.addEventListener("message", receiveMessage);
+    window.parent.postMessage({ message: "getSize" }, "*");
+    return () => window.removeEventListener("message", receiveMessage);
   }, []);
-
   
   return isMobile || screenWidth < 768;
   
