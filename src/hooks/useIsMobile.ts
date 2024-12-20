@@ -1,7 +1,7 @@
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 
 export default function useIsMobile() {
-const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const checkDevice = () => {
@@ -15,7 +15,7 @@ const [isMobile, setIsMobile] = useState(false);
   }, []);
 
   const [screenWidth, setScreenWidth] = useState(800);
- 
+
   //initialize the iframe size by asking parent for the size
   useEffect(() => {}, []);
 
@@ -30,7 +30,6 @@ const [isMobile, setIsMobile] = useState(false);
     window.parent.postMessage({ message: "getSize" }, "*");
     return () => window.removeEventListener("message", receiveMessage);
   }, []);
-  
-  return isMobile || screenWidth < 768;
-  
+
+  return screenWidth < 801;
 }
