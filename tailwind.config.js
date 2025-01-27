@@ -1,9 +1,5 @@
 module.exports = {
-  content: [
-    "./index.html",
-    "./node_modules/@velaro/**/*",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {

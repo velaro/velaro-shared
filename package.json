@@ -2,6 +2,10 @@
   "name": "@velaro/velaro-shared",
   "version": "0.1.2",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velaro/velaro-shared.git"
+  },
   "dependencies": {
     "dompurify": "^2.3.5",
     "lodash": "^4.17.21",
@@ -41,5 +45,6 @@
   },
   "scripts": {
     "build": "tsc"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
