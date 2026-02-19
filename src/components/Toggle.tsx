@@ -28,7 +28,7 @@ export default function Toggle(props: Props) {
         <div
           id="toggle"
           onClick={props.changeToggle}
-          className={`${colorClassName} relative w-8 h-4 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:left-[9px] after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-[3px] after:bg-white after:rounded-full after:h-2.5 after:w-2.5 after:transition-all `}
+          className={`${colorClassName} relative w-8 h-4 bg-gray-200 dark:bg-stone-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:left-[9px] after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:left-[3px] after:bg-white after:rounded-full after:h-2.5 after:w-2.5 after:transition-all `}
         ></div>
       </div>
       {props.label && (
