@@ -1,0 +1,12 @@
+name: Security Scan
+
+on:
+  push:
+    branches: [main, main, master]
+  pull_request:
+    branches: [main, main, master]
+
+jobs:
+  security-gate:
+    uses: velaro/.github/.github/workflows/pr-security-gate.yml@master
+
