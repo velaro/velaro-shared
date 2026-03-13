@@ -57,26 +57,26 @@ function Modal(props: ModalProps) {
   }, []);
 
   useEffect(() => {
-    if (props.show) {
-      previousFocusRef.current = document.activeElement as HTMLElement;
-      document.addEventListener("keydown", handleKeyDown);
+    if (!props.show) return;
 
-      // Focus the first focusable element in the modal
-      requestAnimationFrame(() => {
-        if (modalRef.current) {
-          const firstFocusable = modalRef.current.querySelector(
-            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-          ) as HTMLElement;
-          firstFocusable?.focus();
-        }
-      });
+    previousFocusRef.current = document.activeElement as HTMLElement;
+    document.addEventListener("keydown", handleKeyDown);
 
-      return () => {
-        document.removeEventListener("keydown", handleKeyDown);
-        // Return focus to the previously focused element
-        previousFocusRef.current?.focus();
-      };
-    }
+    // Focus the first focusable element in the modal
+    requestAnimationFrame(() => {
+      if (modalRef.current) {
+        const firstFocusable = modalRef.current.querySelector(
+          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        ) as HTMLElement;
+        firstFocusable?.focus();
+      }
+    });
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      // Return focus to the previously focused element
+      previousFocusRef.current?.focus();
+    };
   }, [props.show, handleKeyDown]);
 
   if (!props.show) {

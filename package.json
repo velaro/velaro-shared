@@ -1,10 +1,20 @@
 {
   "name": "@velaro/velaro-shared",
   "version": "0.1.2",
-  "private": true,
+  "main": "dist/esm/main.js",
+  "types": "dist/esm/main.d.ts",
+  "files": [
+    "dist/",
+    "src/main.css",
+    "src/svg/",
+    "src/images/"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/velaro/velaro-shared.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "dompurify": "^2.3.5",
