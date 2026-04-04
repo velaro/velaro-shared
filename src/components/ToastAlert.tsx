@@ -23,12 +23,12 @@ interface Props {
 
 const colorVariants = {
   Success:
-    "flex flex-row p-4 w-96 h-24 text-sm text-success-green-800 rounded-lg bg-success-green-300",
-  Info: "flex flex-row p-4 w-96 h-24 text-sm text-cornflower-blue-800 rounded-lg bg-cornflower-blue-300",
+    "flex flex-row p-4 w-96 min-h-[96px] text-sm text-success-green-800 rounded-lg bg-success-green-300",
+  Info: "flex flex-row p-4 w-96 min-h-[96px] text-sm text-cornflower-blue-800 rounded-lg bg-cornflower-blue-300",
   Warning:
-    "flex flex-row p-4 w-96 h-24 text-sm text-yellow-800 rounded-lg bg-yellow-300",
+    "flex flex-row p-4 w-96 min-h-[96px] text-sm text-yellow-800 rounded-lg bg-yellow-300",
   Error:
-    "flex flex-row p-4 w-96 h-24 text-sm text-red-800 rounded-lg bg-red-300"
+    "flex flex-row p-4 w-96 min-h-[96px] text-sm text-red-800 rounded-lg bg-red-300"
 };
 
 const iconVariants = {
